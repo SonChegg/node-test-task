@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Portland Cement M500 (50kg)",
+    "category": "Cement",
+    "prices": {
+      "SPB": 430,
+      "MSK": 450,
+      "KRD": 410
+    }
+  },
+  {
+    "id": 2,
+    "name": "Quick-Set Cement M400 (50kg)",
+    "category": "Cement",
+    "prices": {
+      "SPB": 400,
+      "MSK": 420,
+      "KRD": 395
+    }
+  },
+  {
+    "id": 3,
+    "name": "Red Facing Brick (1 pc)",
+    "category": "Bricks",
+    "prices": {
+      "SPB": 28,
+      "MSK": 30,
+      "KRD": 26
+    }
+  },
+  {
+    "id": 4,
+    "name": "Silicate Brick (1 pc)",
+    "category": "Bricks",
+    "prices": {
+      "SPB": 22,
+      "MSK": 24,
+      "KRD": 21
+    }
+  },
+  {
+    "id": 5,
+    "name": "Mineral Wool Roll 10m2",
+    "category": "Insulation",
+    "prices": {
+      "SPB": 1450,
+      "MSK": 1520,
+      "KRD": 1380
+    }
+  },
+  {
+    "id": 6,
+    "name": "Extruded Polystyrene 50mm",
+    "category": "Insulation",
+    "prices": {
+      "SPB": 1320,
+      "MSK": 1400,
+      "KRD": 1290
+    }
+  },
+  {
+    "id": 7,
+    "name": "Metal Roof Tile (sheet)",
+    "category": "Roofing",
+    "prices": {
+      "SPB": 820,
+      "MSK": 860,
+      "KRD": 790
+    }
+  },
+  {
+    "id": 8,
+    "name": "Bitumen Shingle Pack",
+    "category": "Roofing",
+    "prices": {
+      "SPB": 980,
+      "MSK": 1020,
+      "KRD": 930
+    }
+  },
+  {
+    "id": 9,
+    "name": "Pine Timber 50x100x6000",
+    "category": "Lumber",
+    "prices": {
+      "SPB": 610,
+      "MSK": 650,
+      "KRD": 590
+    }
+  },
+  {
+    "id": 10,
+    "name": "Planed Board 25x150x6000",
+    "category": "Lumber",
+    "prices": {
+      "SPB": 520,
+      "MSK": 560,
+      "KRD": 500
+    }
+  },
+  {
+    "id": 11,
+    "name": "Facade Paint 10L",
+    "category": "Paint",
+    "prices": {
+      "SPB": 2150,
+      "MSK": 2230,
+      "KRD": 2090
+    }
+  },
+  {
+    "id": 12,
+    "name": "Interior Paint 10L",
+    "category": "Paint",
+    "prices": {
+      "SPB": 1780,
+      "MSK": 1840,
+      "KRD": 1710
+    }
+  }
+]
