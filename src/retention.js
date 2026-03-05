@@ -1,5 +1,7 @@
-function getCheapestInCategory(materials, category, region) {
-  const sameCategory = materials.filter((material) => material.category === category);
+function findCheapestInCategory(materials, category, region) {
+  const sameCategory = materials.filter((material) => {
+    return material.category === category && Number.isFinite(material.prices[region]);
+  });
 
   if (sameCategory.length === 0) {
     return null;
@@ -17,8 +19,16 @@ function getCheapestInCategory(materials, category, region) {
 }
 
 function buildRetentionOffer(selectedMaterial, materials, region) {
-  const cheapest = getCheapestInCategory(materials, selectedMaterial.category, region);
-  const selectedPrice = selectedMaterial.prices[region];
+  if (!selectedMaterial) {
+    throw new Error('Не удалось подготовить предложение: товар не найден.');
+  }
+
+  const selectedPrice = selectedMaterial.prices && selectedMaterial.prices[region];
+  if (!Number.isFinite(selectedPrice)) {
+    throw new Error(`Для выбранного товара нет цены в регионе ${region}.`);
+  }
+
+  const cheapest = findCheapestInCategory(materials, selectedMaterial.category, region);
 
   if (!cheapest) {
     return {
