@@ -21,7 +21,7 @@ async function askYesNo(message) {
           return true;
         }
 
-        return 'Please enter y or n.';
+        return 'Введите y или n.';
       }
     }
   ]);
@@ -30,11 +30,11 @@ async function askYesNo(message) {
 }
 
 function printOrderPreview(region, product, price) {
-  console.log('\nSelected order:');
-  console.log(`Region: ${region}`);
-  console.log(`Product: ${product.name}`);
-  console.log(`Category: ${product.category}`);
-  console.log(`Price: ${price} RUB`);
+  console.log('\nВыбранный заказ:');
+  console.log(`Регион: ${region}`);
+  console.log(`Товар: ${product.name}`);
+  console.log(`Категория: ${product.category}`);
+  console.log(`Цена: ${price} руб.`);
 }
 
 async function main() {
@@ -46,7 +46,7 @@ async function main() {
       {
         type: 'list',
         name: 'region',
-        message: 'Select a region:',
+        message: 'Выберите регион:',
         choices: regions
       }
     ]);
@@ -55,7 +55,7 @@ async function main() {
       {
         type: 'list',
         name: 'materialId',
-        message: 'Select a material:',
+        message: 'Выберите материал:',
         choices: materials.map((material) => formatMaterialChoice(material, region))
       }
     ]);
@@ -65,37 +65,37 @@ async function main() {
 
     printOrderPreview(region, selectedMaterial, selectedPrice);
 
-    const firstConfirmation = await askYesNo('Confirm order? (y/n)');
+    const firstConfirmation = await askYesNo('Подтвердить заказ? (y/n)');
 
     if (firstConfirmation) {
       const orderData = createOrderData(region, selectedMaterial, selectedPrice, selectedPrice);
       const savedPath = await saveOrder(orderData);
-      console.log(`\nOrder confirmed and saved to: ${savedPath}`);
+      console.log(`\nЗаказ подтвержден и сохранен в: ${savedPath}`);
       return;
     }
 
     const offer = buildRetentionOffer(selectedMaterial, materials, region);
 
     console.log(`\n${offer.message}`);
-    console.log('Final offer:');
-    console.log(`Product: ${offer.product.name}`);
-    console.log(`Category: ${offer.product.category}`);
-    console.log(`Base price: ${offer.basePrice} RUB`);
-    console.log(`Final price: ${offer.finalPrice} RUB`);
+    console.log('Финальное предложение:');
+    console.log(`Товар: ${offer.product.name}`);
+    console.log(`Категория: ${offer.product.category}`);
+    console.log(`Базовая цена: ${offer.basePrice} руб.`);
+    console.log(`Итоговая цена: ${offer.finalPrice} руб.`);
 
-    const secondConfirmation = await askYesNo('Confirm order? (y/n)');
+    const secondConfirmation = await askYesNo('Подтвердить заказ? (y/n)');
 
     if (!secondConfirmation) {
-      console.log('\nOrder was not confirmed.');
+      console.log('\nЗаказ не подтвержден.');
       return;
     }
 
     const orderData = createOrderData(region, offer.product, offer.basePrice, offer.finalPrice);
     const savedPath = await saveOrder(orderData);
 
-    console.log(`\nOrder confirmed and saved to: ${savedPath}`);
+    console.log(`\nЗаказ подтвержден и сохранен в: ${savedPath}`);
   } catch (error) {
-    console.error(`Error: ${error.message}`);
+    console.error(`Ошибка: ${error.message}`);
     process.exit(1);
   }
 }

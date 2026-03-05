@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Portland Cement M500 (50kg)",
-    "category": "Cement",
+    "name": "Портландцемент М500 (50кг)",
+    "category": "Цемент",
     "prices": {
       "SPB": 430,
       "MSK": 450,
@@ -11,8 +11,8 @@
   },
   {
     "id": 2,
-    "name": "Quick-Set Cement M400 (50kg)",
-    "category": "Cement",
+    "name": "Быстротвердеющий цемент М400 (50кг)",
+    "category": "Цемент",
     "prices": {
       "SPB": 400,
       "MSK": 420,
@@ -21,8 +21,8 @@
   },
   {
     "id": 3,
-    "name": "Red Facing Brick (1 pc)",
-    "category": "Bricks",
+    "name": "Кирпич облицовочный красный (1 шт)",
+    "category": "Кирпич",
     "prices": {
       "SPB": 28,
       "MSK": 30,
@@ -31,8 +31,8 @@
   },
   {
     "id": 4,
-    "name": "Silicate Brick (1 pc)",
-    "category": "Bricks",
+    "name": "Кирпич силикатный (1 шт)",
+    "category": "Кирпич",
     "prices": {
       "SPB": 22,
       "MSK": 24,
@@ -41,8 +41,8 @@
   },
   {
     "id": 5,
-    "name": "Mineral Wool Roll 10m2",
-    "category": "Insulation",
+    "name": "Минеральная вата рулон 10м2",
+    "category": "Утеплитель",
     "prices": {
       "SPB": 1450,
       "MSK": 1520,
@@ -51,8 +51,8 @@
   },
   {
     "id": 6,
-    "name": "Extruded Polystyrene 50mm",
-    "category": "Insulation",
+    "name": "Экструдированный пенополистирол 50мм",
+    "category": "Утеплитель",
     "prices": {
       "SPB": 1320,
       "MSK": 1400,
@@ -61,8 +61,8 @@
   },
   {
     "id": 7,
-    "name": "Metal Roof Tile (sheet)",
-    "category": "Roofing",
+    "name": "Металлочерепица (лист)",
+    "category": "Кровля",
     "prices": {
       "SPB": 820,
       "MSK": 860,
@@ -71,8 +71,8 @@
   },
   {
     "id": 8,
-    "name": "Bitumen Shingle Pack",
-    "category": "Roofing",
+    "name": "Битумная черепица (упаковка)",
+    "category": "Кровля",
     "prices": {
       "SPB": 980,
       "MSK": 1020,
@@ -81,8 +81,8 @@
   },
   {
     "id": 9,
-    "name": "Pine Timber 50x100x6000",
-    "category": "Lumber",
+    "name": "Брус сосновый 50x100x6000",
+    "category": "Пиломатериалы",
     "prices": {
       "SPB": 610,
       "MSK": 650,
@@ -91,8 +91,8 @@
   },
   {
     "id": 10,
-    "name": "Planed Board 25x150x6000",
-    "category": "Lumber",
+    "name": "Доска строганая 25x150x6000",
+    "category": "Пиломатериалы",
     "prices": {
       "SPB": 520,
       "MSK": 560,
@@ -101,8 +101,8 @@
   },
   {
     "id": 11,
-    "name": "Facade Paint 10L",
-    "category": "Paint",
+    "name": "Фасадная краска 10л",
+    "category": "Краска",
     "prices": {
       "SPB": 2150,
       "MSK": 2230,
@@ -111,8 +111,8 @@
   },
   {
     "id": 12,
-    "name": "Interior Paint 10L",
-    "category": "Paint",
+    "name": "Интерьерная краска 10л",
+    "category": "Краска",
     "prices": {
       "SPB": 1780,
       "MSK": 1840,

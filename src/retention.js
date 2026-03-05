@@ -26,7 +26,7 @@ function buildRetentionOffer(selectedMaterial, materials, region) {
       product: selectedMaterial,
       basePrice: selectedPrice,
       finalPrice: selectedPrice,
-      message: 'No retention offer available.'
+      message: 'Дополнительное предложение недоступно.'
     };
   }
 
@@ -40,7 +40,7 @@ function buildRetentionOffer(selectedMaterial, materials, region) {
       product: selectedMaterial,
       basePrice: selectedPrice,
       finalPrice,
-      message: `Selected product is already the cheapest. Applying 5% discount.`
+      message: 'Выбранный товар уже самый дешевый. Применяем скидку 5%.'
     };
   }
 
@@ -49,7 +49,7 @@ function buildRetentionOffer(selectedMaterial, materials, region) {
     product: cheapest,
     basePrice: cheapestPrice,
     finalPrice: cheapestPrice,
-    message: `We can offer a cheaper product in the same category.`
+    message: 'Можем предложить более дешевый товар в той же категории.'
   };
 }
 

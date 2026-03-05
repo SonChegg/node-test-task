@@ -1,7 +1,7 @@
 {
   "name": "materials-order-cli",
   "version": "1.0.0",
-  "description": "Simple Node.js CLI for construction materials ordering",
+  "description": "Простое Node.js CLI-приложение для оформления заказа стройматериалов",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
@@ -10,7 +10,7 @@
     "cli",
     "nodejs",
     "inquirer",
-    "materials"
+    "стройматериалы"
   ],
   "author": "",
   "license": "MIT",

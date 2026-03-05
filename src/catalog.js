@@ -8,7 +8,7 @@ async function loadCatalog() {
   const materials = JSON.parse(file);
 
   if (!Array.isArray(materials) || materials.length === 0) {
-    throw new Error('Catalog is empty or invalid.');
+    throw new Error('Каталог пустой или имеет неверный формат.');
   }
 
   return materials;
@@ -22,7 +22,7 @@ function getRegions(materials) {
 function formatMaterialChoice(material, region) {
   const price = material.prices[region];
   return {
-    name: `[${material.id}] ${material.name} | ${material.category} | ${price} RUB`,
+    name: `[${material.id}] ${material.name} | ${material.category} | ${price} руб.`,
     value: material.id
   };
 }

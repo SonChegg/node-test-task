@@ -1,20 +1,20 @@
-# Construction Materials CLI
+# CLI для заказа стройматериалов
 
-Simple Node.js console application for selecting construction materials by region and confirming an order.
+Простое консольное Node.js приложение для выбора стройматериалов по региону и подтверждения заказа.
 
-## Features
+## Возможности
 
-- Loads materials from local `materials.json`
-- Region selection (`SPB`, `MSK`, `KRD`)
-- Shows prices for the selected region
-- Material selection and order confirmation
-- Retention flow if user answers `n`
-  - Finds cheapest product in the same category
-  - If selected product is already cheapest, applies 5% discount
-  - Otherwise offers cheapest alternative
-- Saves confirmed order JSON files to `orders/order-{timestamp}.json`
+- Загружает материалы из локального файла `materials.json`
+- Выбор региона (`SPB`, `MSK`, `KRD`)
+- Показывает цены для выбранного региона
+- Выбор материала и подтверждение заказа
+- Сценарий удержания, если пользователь отвечает `n`
+  - Находит самый дешевый товар в той же категории
+  - Если выбранный товар уже самый дешевый, применяет скидку 5%
+  - Иначе предлагает более дешевую альтернативу
+- Сохраняет подтвержденный заказ в JSON в `orders/order-{timestamp}.json`
 
-## Project structure
+## Структура проекта
 
 ```text
 project/
@@ -29,24 +29,24 @@ project/
   README.md
 ```
 
-## Requirements
+## Требования
 
 - Node.js 16+
 
-## Run
+## Запуск
 
 ```bash
 npm install
 npm start
 ```
 
-## Output order format
+## Формат сохраненного заказа
 
 ```json
 {
   "region": "SPB",
-  "productName": "Portland Cement M500 (50kg)",
-  "category": "Cement",
+  "productName": "Портландцемент М500 (50кг)",
+  "category": "Цемент",
   "basePrice": 430,
   "finalPrice": 430,
   "createdAt": "2026-03-05T10:00:00.000Z"
